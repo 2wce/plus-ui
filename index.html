@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en" class="app bg-light">
+<head>  
+  <meta charset="utf-8" />
+  <title>Plus Afrik</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /> 
+  <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+  <link rel="stylesheet" href="css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css" />
+  <link rel="stylesheet" href="css/icon.css" type="text/css" />
+  <link rel="stylesheet" href="css/font.css" type="text/css" />
+  <link rel="stylesheet" href="css/app.css" type="text/css" />  
+    <!--[if lt IE 9]>
+    <script src="js/ie/html5shiv.js"></script>
+    <script src="js/ie/respond.min.js"></script>
+    <script src="js/ie/excanvas.js"></script>
+  <![endif]-->
+</head>
+<body class="">
+  <section class="vbox">
+    <header class="bg-white header header-md navbar navbar-fixed-top navbar-fixed-top-md box-shadow">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="navbar-header aside-md">
+            <a class="btn btn-link visible-xs" data-toggle="class:nav-off-screen" data-target="#nav">
+              <i class="fa fa-bars"></i>
+            </a>
+            <a href="index.html" class="navbar-brand">
+              <img src="images/logo.png" class="m-r-sm" alt="scale">
+            </a>
+            <a class="btn btn-link visible-xs" data-toggle="dropdown" data-target=".user">
+              <i class="fa fa-cog"></i>
+            </a>
+          </div>
+          <!--search-->
+          
+              <form class="navbar-form navbar-left input-s-xl m-t m-l-n-xs hidden-xs" role="search">
+                <div class="form-group">
+                  <div class="col-sm-12">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button type="submit" class="btn btn-sm bg-white b-white btn-icon"><i class="fa fa-search"></i></button>
+                      </span>
+                      <input type="text" class="form-control input-sm b-info" placeholder="What are you looking for?...">
+                    </div>
+                  </div>
+                </div>
+              </form>
+          
+          <!--/search-->
+          <ul class="nav navbar-nav navbar-right m-n hidden-xs nav-user user">
+            <!--profile-->
+            <li class="hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                John.Smith 
+                <span class="thumb-sm avatar">
+                  <img src="images/a0.png" alt="...">
+                </span>                
+              </a>
+            </li>
+            <!--/profile-->
+            <!--messages-->
+            <li class="hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-envelope"></i>
+                <span class="badge badge-sm up bg-danger count">2</span>
+              </a>
+              <section class="dropdown-menu aside-xl animated fadeInRight">
+                <section class="panel bg-white">
+                  <div class="panel-heading b-light bg-light">
+                    <strong>You have <span class="count">2</span> messages</strong>
+                  </div>
+                  <div class="list-group list-group-alt">
+                    <a href="#" class="media list-group-item">
+                      <span class="pull-left thumb-sm">
+                        <img src="images/a0.png" alt="..." class="img-circle">
+                      </span>
+                      <span class="media-body block m-b-none">
+                        Use awesome animate.css<br>
+                        <small class="text-muted">10 minutes ago</small>
+                      </span>
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      <span class="media-body block m-b-none">
+                        1.0 initial released<br>
+                        <small class="text-muted">1 hour ago</small>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="panel-footer text-sm">
+                    <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                    <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                  </div>
+                </section>
+              </section>
+            </li>
+            <!--/messages-->
+            <!--notifications-->
+            <li class="hidden-xs">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-bell"></i>
+                <span class="badge badge-sm up bg-danger count">2</span>
+              </a>
+              <section class="dropdown-menu aside-xl animated fadeInRight">
+                <section class="panel bg-white">
+                  <div class="panel-heading b-light bg-light">
+                    <strong>You have <span class="count">2</span> notifications</strong>
+                  </div>
+                  <div class="list-group list-group-alt">
+                    <a href="#" class="media list-group-item">
+                      <span class="pull-left thumb-sm">
+                        <img src="images/a0.png" alt="..." class="img-circle">
+                      </span>
+                      <span class="media-body block m-b-none">
+                        Use awesome animate.css<br>
+                        <small class="text-muted">10 minutes ago</small>
+                      </span>
+                    </a>
+                    <a href="#" class="media list-group-item">
+                      <span class="media-body block m-b-none">
+                        1.0 initial released<br>
+                        <small class="text-muted">1 hour ago</small>
+                      </span>
+                    </a>
+                  </div>
+                  <div class="panel-footer text-sm">
+                    <a href="#" class="pull-right"><i class="fa fa-cog"></i></a>
+                    <a href="#notes" data-toggle="class:show animated fadeInRight">See all the notifications</a>
+                  </div>
+                </section>
+              </section>
+            </li>
+            <!--notifications-->
+            <!--settings-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                <i class="fa fa-cog"></i>
+                <!-- <span class="badge badge-sm up bg-danger count">2</span> -->
+              </a>
+              <ul class="dropdown-menu animated fadeInRight">
+                <li>
+                  <a href="#">Profile</a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="badge bg-danger pull-right">3</span>
+                    Notifications
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                  <a href="modal.lockme.html" data-toggle="ajaxModal" >Logout</a>
+                </li>
+              </ul>
+            </li>
+            <!--/settings-->
+          </ul>
+        </div>
+      </div> 
+      <!-- main menu -->
+      <div class="row">
+        <div class="col-sm-12 m-b-md">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-6">
+            <a href="#" class="m-md"><span class="text-info font-bold">Home</span></a>
+            <a href="#" class="m-md"><span class="text-info font-bold">Products</span></a>
+            <a href="#" class="m-md"><span class="text-info font-bold">Services</span></a>
+            <a href="#" class="m-md"><span class="text-info font-bold">Companies</span></a>
+            <a href="#" class="m-md"><span class="text-info font-bold">People</span></a>
+            <a href="#" class="m-md"><span class="text-info font-bold">Places</span></a>
+          </div>
+        </div>
+      </div>
+      <!-- /main menu -->     
+    </header>
+
+    <section>
+      <section class="hbox stretch">
+        <!-- categories menu -->
+        <aside class="aside-md" id="nav">
+          <section class="vbox">
+            <section class="w-f scrollable">
+              <!-- nav -->
+              <div class=slim-scroll data-height=auto data-disable-fade-out=true data-distance=0 data-size=10px data-railOpacity=0.2>      
+                <!-- nav -->                 
+                <nav class="nav-primary hidden-xs b bg-white">
+                  <div class="text-muted h3 hidden-nav-xs padder m-t-sm m-b-sm">Categories</div>
+                  <ul class="nav nav-main" data-ride="collapse">
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Arts & Entertainment</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Automotive Industry</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Beauty & Spas</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Education</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Events Planning</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="index.html" class="auto">
+                        <i class="i i-statistics icon">
+                        </i>
+                        <span class="font-bold">Health Medical</span>
+                      </a>
+                    </li>
+                    <li >
+                      <a href="#" class="auto">
+                        <span class="pull-right text-muted">
+                          <i class="i i-circle-sm-o text"></i>
+                          <i class="i i-circle-sm text-active"></i>
+                        </span>
+                        <b class="badge bg-danger pull-right">4</b>
+                        <i class="i i-stack icon">
+                        </i>
+                        <span class="font-bold">Home Services</span>
+                      </a>
+                      <ul class="nav dk">
+                        <li >
+                          <a href="index.html" class="auto">                    
+                            <i class="i i-dot"></i>
+                            <span>Sub-option</span>
+                          </a>
+                        </li>
+                        <li  class="active">
+                          <a href="index.html" class="auto">                                                        
+                            <i class="i i-dot"></i>
+                            <span>Sub-option</span>
+                          </a>
+                        </li>
+                        <li >
+                          <a href="index.html" class="auto">                                                       
+                            <i class="i i-dot"></i>
+                            <span>Sub-option</span>
+                          </a>
+                        </li>
+                        <li >
+                          <a href="index.html" class="auto">                                                       
+                            <i class="i i-dot"></i>
+                            <span>Sub-option</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <div class="line dk hidden-nav-xs"></div>
+                </nav>
+                <!-- / nav -->
+                <!-- contact details --> 
+                <section class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="text-muted m-b-sm h3">Contacts</div>
+                    <div class="block"><i class="fa fa-map-marker text-info"></i></i> 00 Road, Gunhill Harare</div>
+                    <div class="block"><i class="fa fa-phone text-info"></i> 080 000 000</div>
+                    <div class="block"><i class="fa fa-envelope text-info"></i> info@mymail.com</div>
+                    <div class="block"><i class="fa fa-globe text-info"></i> www.mywebsite.com</div>
+
+                    <div id="social-buttons m-lg">
+                      <a href="#" class="btn btn-rounded btn-sm btn-icon btn-default"><i class="fa fa-twitter"></i></a>
+                      <a href="#" class="btn btn-rounded btn-sm btn-icon btn-default"><i class="fa fa-facebook"></i></a>
+                      <a href="#" class="btn btn-rounded btn-sm btn-icon btn-default"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <div class="block"><a href="#"><span class="text-info font-bold">Get Business Card</span></a></div>
+                    <div class="block"><a href="#"><span class="text-info font-bold">Send Business Card</span></a></div>
+                  </div>
+                </section>
+                <!-- /contact details --> 
+                <!-- about details --> 
+                <section class="panel panel-default">
+                  <div class="panel-body">
+                    <div class="text-muted m-b-sm h3">About</div>
+                    <p>
+                      Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque
+                      <small><a href="#"><span class="text-info font-bold">View more</span></a></small>
+                    </p>
+                  </div>
+                </section>
+                <!-- /about details --> 
+              </div>
+              <!-- / nav -->
+            </section>
+                
+            <footer class="footer hidden-xs no-padder text-center-nav-xs">
+              <a href="modal.lockme.html" data-toggle="ajaxModal" class="btn btn-icon icon-muted btn-inactive pull-right m-l-xs m-r-xs hidden-nav-xs">
+                <i class="i i-logout"></i>
+              </a>
+              <a href="#nav" data-toggle="class:nav-xs" class="btn btn-icon icon-muted btn-inactive m-l-xs m-r-xs">
+                <i class="i i-circleleft text"></i>
+                <i class="i i-circleright text-active"></i>
+              </a>
+            </footer>
+          </section>
+        </aside>
+        <!-- /categories menu -->
+
+        <!-- main content area -->
+        <section id="content"> 
+          <section class="hbox stretch">              
+            <!--main content-->
+            <section class="">
+              <section class="vbox">
+                <section class="scrollable wrapper">
+                  <!-- <div class=slim-scroll data-height=auto data-disable-fade-out=true data-distance=0 data-size=10px data-railOpacity=0.2> -->
+                    <div class="row">
+                      <!--posts-->
+                      <div class="col-sm-8">
+                        <section class="panel panel-default">
+                          <header class="panel-heading bg-light">
+                            <ul class="nav nav-tabs nav-justified">
+                              <li class="active"><a href="#share-update" data-toggle="tab"><i class="fa fa-comment text-info"></i> Share Update</a></li>
+                              <li class=""><a href="#add-product" data-toggle="tab"><i class="fa fa-shopping-cart text-info"></i> Add Product</a></li>
+                              <li class=""><a href="#add-service" data-toggle="tab"><i class="fa fa-suitcase text-info"></i> Add Service</a></li>
+                            </ul>
+                          </header>
+                          <div class="panel-body">
+                            <div class="tab-content">
+                              <!--share update-->              
+                              <div class="tab-pane fade active in" id="share-update">
+                                <section class="panel panel-default">
+                                  <form>
+                                    <section class="panel-body">
+                                      <div class="row">
+                                        <div class="form-group">
+                                          <div class="col-sm-12">
+                                            <textarea class="form-control col-sm-12 b-info" name="" placeholder="Whats on your mind..."></textarea>
+                                          </div>
+                                        </div> 
+                                      </div>                                                     
+                                    </section>
+                                    <footer class="panel-footer">
+                                      <div class="row">
+                                        <div class="col-sm-8">
+                                          <div class="doc-buttons">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-picture-o"></i> Add Picture</a>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-film"></i> Add Video</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-4"><button type="submit" id="submit" class="btn btn-primary pull-right">Post</button></div>
+                                        
+                                      </div>
+                                      
+                                    </footer>
+                                  </form>
+                                </section>
+                              </div>
+                              <!--add product-->
+                              <div class="tab-pane fade" id="add-product">
+                                <section class="panel panel-default">
+                                  <form>
+                                    <section class="panel-body">
+                                      <div class="row">
+                                        <div class="form-group">
+                                          <div class="col-sm-12">
+                                            <label>What are you selling?</label>
+                                            <input type="text" class="form-control" name="product-name" placeholder="" value="">
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="col-sm-12">
+                                            <label>How much?</label>
+                                            <div class="input-group m-b">
+                                              <span class="input-group-addon">$</span>
+                                              <input type="text" class="form-control" name="price" placeholder="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="col-sm-12">
+                                            <label>Product Description</label>
+                                            <textarea class="form-control" name="description"> </textarea>
+                                          </div>
+                                        </div> 
+                                      </div>                                                     
+                                    </section>
+                                    <footer class="panel-footer">
+                                      <div class="row">
+                                        <div class="col-sm-8">
+                                          <div class="doc-buttons">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-picture-o"></i> Add Picture</a>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-film"></i> Add Video</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-4"><button type="submit" id="submit" class="btn btn-primary pull-right">Post</button></div>
+                                        
+                                      </div>
+                                      
+                                    </footer>
+                                  </form>
+                                </section>
+                              </div>
+                              <!--add service-->
+                              <div class="tab-pane fade" id="add-service">
+                                <section class="panel panel-default">
+                                  <form>
+                                    <section class="panel-body">
+                                      <div class="row">
+                                        <div class="form-group">
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="col-sm-6">
+                                                <label>What are you selling?</label>
+                                                <input type="text" class="form-control" name="product-name" placeholder="" value="">
+                                              </div>
+                                              <div class="col-sm-6">
+                                                <label>Category</label>
+                                                <select name="category" class="form-control">
+                                                  <option value=''></option>
+                                                  <option value="1">Clothing</option>
+                                                  <option value="2">Electronic</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="row">
+                                            <div class="col-sm-12">
+                                              <div class="col-sm-6">
+                                                <label>Rate</label>
+                                                <div class="row">
+                                                  <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="rate" placeholder="" value="">
+                                                  </div>
+                                                  <div class="col-sm-6">
+                                                    <select name="rate-1" class="form-control">
+                                                      <option value=''></option>
+                                                      <option value="1">Hour</option>
+                                                      <option value="2">Daily</option>
+                                                      <option value="3">Weekly</option>
+                                                    </select>
+                                                  </div>
+                                                </div>                                      
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                          <div class="col-sm-12">
+                                            <label>Service Description</label>
+                                            <textarea class="form-control" name="description"> </textarea>
+                                          </div>
+                                        </div> 
+                                      </div>                                                     
+                                    </section>
+                                    <footer class="panel-footer">
+                                      <div class="row">
+                                        <div class="col-sm-8">
+                                          <div class="doc-buttons">
+                                            <a href="#" class="btn btn-default"><i class="fa fa-picture-o"></i> Add Picture</a>
+                                            <a href="#" class="btn btn-default"><i class="fa fa-film"></i> Add Video</a>
+                                          </div>
+                                        </div>
+                                        <div class="col-sm-4"><button type="submit" id="submit" class="btn btn-primary pull-right">Post</button></div>
+                                        
+                                      </div>
+                                      
+                                    </footer>
+                                  </form>
+                                </section>
+                              </div>
+                            </div>
+                          </div>
+                        </section> 
+                        <!--product posts-->
+                        <section class="panel panel-default">
+                          <section class="panel-body m-b-lg">
+                            <div class="row m-b-md">
+                              <div class="col-sm-12">
+                                <div class="col-sm-2">
+                                  <div class="thumb-md avatar">
+                                    <img src="images/a5.png" class="">
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="col-sm-12">
+                                    <div class="h4 m-b-xs font-bold text-lt">Nyasha L Ghuzha</div>
+                                    <small class="text-muted block">Graphic Designer</small>
+                                    <small class="font-bold block">Guzha Advertising</small>
+                                    <small class="text-muted block"><span class="text-info font-bold">From</span> Harare Zimbabwe</small>
+                                  </div>
+                                </div>
+                                <div class="col-sm-4">
+                                  <div class="doc-buttons">
+                                    <a href="#" class="btn btn-sm btn-default">Follow</a>
+                                    <a href="#" class="btn btn-sm btn-default">Connect</a>
+                                    <!-- <a href="#" class="btn btn-sm btn-default">Business Card</a> -->
+                                  </div>
+                                </div>
+                              </div>                    
+                            </div>
+
+                            <div class="row m-b-md">
+                              <div class="col-sm-2 m-n text-center">
+                                <!--rating-->
+                                <small class="block m-b-sm">
+                                  <span class="text-warning"><i class="fa fa-star"></i></span>
+                                  <span class="text-warning"><i class="fa fa-star"></i></span>
+                                  <span class="text-warning"><i class="fa fa-star"></i></span>
+                                  <span class="text-warning"><i class="fa fa-star"></i></span>
+                                  <span class="text-warning"><i class="fa fa-star"></i></span>
+                                </small>
+                                <div class="thumb-md">
+                                  <img src="images/gold_supplier.jpg" class="">
+                                </div>
+                                <small class="block"><span class="text-info">4k</span> Followers</small>
+                              </div>
+                              <div class="col-sm-10">
+                                <div class="col-sm-12">
+                                  <!--product name category-->
+                                  <div class="col-sm-8 m-b-sm">
+                                    <span class="h2">Apple Macbook</span>
+                                  </div>
+                                  <div class="col-sm-4 m-b-sm">
+                                    <span class="h4 pull-right">Electronics</span>
+                                  </div>
+                                  <!--carousel-->
+                                  <div class="col-sm-12">
+                                    <section class="m-b-sm">
+                                      <div class="carousel auto slide" id="c-fade">
+                                          <ol class="carousel-indicators out">
+                                            <li data-target="#c-fade" data-slide-to="0" class="active"></li>
+                                            <li data-target="#c-fade" data-slide-to="1" class=""></li>
+                                          </ol>
+                                          <div class="carousel-inner">
+                                            <div class="item bg-light dker wrapper active text-center">
+                                              <div class="col-sm-6">
+                                                <span class="h2"><i class="fa fa-clock-o fa-2x m-t text-white"></i></span>
+                                                <p class="text-muted m-t m-b-lg">Product Image One</p>
+                                              </div>
+                                            </div>
+                                            <!-- <div class="item bg-light dk wrapper text-center">
+                                              <span class="h2"><i class="fa fa-file-o fa-2x m-t text-white"></i></span>
+                                              <p class="text-muted m-t m-b-lg">Product Image Two</p>
+                                            </div> -->
+                                          </div>
+                                          <a class="left carousel-control" href="#c-fade" data-slide="prev">
+                                            <i class="fa fa-angle-left"></i>
+                                          </a>
+                                          <a class="right carousel-control" href="#c-fade" data-slide="next">
+                                            <i class="fa fa-angle-right"></i>
+                                          </a>
+                                      </div>
+                                    </section>
+                                  </div>                        
+                                  <!--product image-->
+                                  <div class="col-sm-12">
+                                    <div class="img-responsive">
+                                      <img src="./images/apple_mac.jpg" class="">
+                                    </div>
+                                    <p>
+                                      Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.Phasellus at ultricies neque, quis malesuada augue. Donec eleifend condimentum nisl eu consectetur. Integer eleifend, nisl venenatis consequat iaculis, lectus arcu malesuada sem, dapibus porta quam lacus eu neque.
+                                    </p>
+                                    <div class="doc-buttons">
+                                      <a href="#" class="btn btn-sm btn-default"><i class="fa fa-heart text-info"></i> Like</a>
+                                      <a href="#" class="btn btn-sm btn-default"><i class="fa fa-shopping-cart"></i> Buy</a>
+                                      <a href="#" class="btn btn-sm btn-default"><i class="fa fa-users"></i> Share</a>
+                                      <a href="#" class="btn btn-sm btn-default"><i class="fa fa-download"></i> Save</a>
+                                      <a href="#" class="btn btn-sm btn-default"><i class="fa fa-warning"></i> Report</a>
+                                    </div>
+                                  </div>                        
+                                </div>
+                              </div>
+                            </div>
+
+                          </section>
+                          <footer class="panel-footer">
+                            <!-- chat form -->
+                            <article class="chat-item" id="chat-form">
+                              <section class="chat-body">
+                                <form action="" class="m-b-none">
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Say something">
+                                    <span class="input-group-btn">
+                                      <button class="btn btn-default" type="button">SEND</button>
+                                    </span>
+                                  </div>
+                                </form>
+                              </section>
+                            </article>
+                          </footer>
+                        </section>
+                      </div>
+                      <!--/posts-->
+                      <!--interesting-->
+                      <div class="col-sm-4">
+                        <section class="panel panel-default">
+                          <header class="panel-heading">                    
+                            You might find these interesting
+                          </header>
+                          <article class="media m-l-sm">
+                            <span class="pull-left thumb-sm"><img src="images/a2.png"></span>
+                            <div class="media-body">
+                              <small class="block"><a href="#" class=" font-bold text-info">Milk Media Inc</a></small>
+                              <small class="block">Multimedia Distribution</small>
+                              <small class="block m-b-sm">
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                              </small>
+                              <div class="doc-buttons">
+                                <a href="#" class="btn btn-sm btn-default b-info">Follow</a>
+                                <a href="#" class="btn btn-sm btn-default b-info">Connect</a>
+                              </div>
+                            </div>
+                          </article>
+                          <div class="line pull-in"></div>
+                          <article class="media m-l-sm">
+                            <span class="pull-left thumb-sm"><img src="images/a2.png"></span>
+                            <div class="media-body">
+                              <small class="block"><a href="#" class=" font-bold text-info">Milk Media Inc</a></small>
+                              <small class="block">Multimedia Distribution</small>
+                              <small class="block m-b-sm">
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                              </small>
+                              <div class="doc-buttons">
+                                <a href="#" class="btn btn-sm btn-default b-info">Follow</a>
+                                <a href="#" class="btn btn-sm btn-default b-info">Connect</a>
+                              </div>
+                            </div>
+                          </article>
+                          <div class="line pull-in"></div>
+                          <article class="media m-l-sm">
+                            <span class="pull-left thumb-sm"><img src="images/a2.png"></span>
+                            <div class="media-body">
+                              <small class="block"><a href="#" class=" font-bold text-info">Milk Media Inc</a></small>
+                              <small class="block">Multimedia Distribution</small>
+                              <small class="block m-b-sm">
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                                <span class="text-warning"><i class="fa fa-star"></i></span>
+                              </small>
+                              <div class="doc-buttons">
+                                <a href="#" class="btn btn-sm btn-default b-info">Follow</a>
+                                <a href="#" class="btn btn-sm btn-default b-info">Connect</a>
+                              </div>
+                            </div>
+                          </article>
+                        </section>
+                      </div>
+                      <!--/interesting-->
+                    </div>
+                  <!-- </div> -->
+                </section>
+              </section>
+            </section>
+            <!--right side-->
+            <aside class="aside hidden-xs">
+              <section class="vbox">
+                <section class="w-f scrollable m-r">                  
+                  <!--recent activity-->
+                    <section class="panel panel-default">
+                      <header class="panel-heading font-bold">                    
+                        Recent Activity
+                      </header>
+                      <article class="media m-l-sm">
+                        <span class="pull-left thumb-sm"><img src="images/a2.png"></span>
+                        <div class="media-body">
+                          <small class="block"><a href="#" class="text-info">John Smith</a> shared a link</small>
+                          <small class="block m-t-sm">Phasellus at ultricies neque...</small>
+                        </div>
+                      </article>
+                      <div class="line pull-in"></div>
+                      <article class="media m-l-sm">
+                        <span class="pull-left thumb-sm"><img src="images/a2.png"></span>
+                        <div class="media-body">
+                          <small class="block"><a href="#" class="text-info">John Smith</a> shared a link</small>
+                          <small class="block m-t-sm">Phasellus at ultricies neque...</small>
+                        </div>
+                      </article>
+                    </section>
+
+                    <section class="panel panel-default">
+                      <header class="panel-heading">                    
+                        More customers via email
+                      </header>
+                      <div class="panel-body">
+                        <div class="m-b-md col-sm-12">
+                          <div class="col-sm-6">
+                            <div class="thumb-sm">
+                              <img class="pull-left" src="images/icons/gmail_icon.png">
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <a href="#" class="btn btn-default btn-sm b-info">Connect</a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <footer class="footer hidden-xs text-center-nav-xs">
+                      <small class="block"><a href="#">Copyright PlusAfrik 2016</a></small>
+                      <small class="block"><a href="#">About</a> | <a href="#">Terms</a> | <a href="#">Privacy</a></small>
+                      <small class="block"><a href="#">Feedback</a> | <a href="#">Advertising Policy</a></small>
+                      <small class="block"><a href="#">Product Listing</a></small>
+                    </footer>
+                </section>
+              </section>
+            </aside>
+          </section>
+
+          <a href="#" class="hide nav-off-screen-block" data-toggle="class:nav-off-screen" data-target="#nav"></a>
+        </section>
+        <!-- /main content area -->
+      </section>
+
+    </section>    
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- App -->
+  <script src="js/app.js"></script>  
+  <script src="js/slimscroll/jquery.slimscroll.min.js"></script>
+  <script src="js/app.plugin.js"></script>
+  <script src="js/rating/star.rating.js"></script>
+</body>
+</html>
